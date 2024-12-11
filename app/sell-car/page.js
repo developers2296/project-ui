@@ -93,10 +93,10 @@ export default function SellCarPage() {
           value={carDetails.city}
           onChange={handleInputChange}
         >
-          <MenuItem value="New York">New York</MenuItem>
-          <MenuItem value="Los Angeles">Los Angeles</MenuItem>
-          <MenuItem value="Chicago">Chicago</MenuItem>
-          <MenuItem value="Houston">Houston</MenuItem>
+          <MenuItem value="lahore">Lahore</MenuItem>
+          <MenuItem value="islamabad">Islamabad</MenuItem>
+          <MenuItem value="rawalpindi">Rawalpindi</MenuItem>
+          <MenuItem value="larachi">Karachi</MenuItem>
         </TextField>
         <input
           type="file"
