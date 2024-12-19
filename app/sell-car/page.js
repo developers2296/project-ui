@@ -33,13 +33,11 @@ export default function SellCarPage() {
   const handleSubmit = async () => {
     try {
       const response = await storeCarDetails(carDetails, images);
-      if(response.metadata.success){
+      if (response.metadata.success) {
         alert("Car details stored successfully!");
       } else {
-        setError(response.metadata.message)
+        setError(response.metadata.message);
       }
-      
-
     } catch (err) {
       setError(err.message);
     }
@@ -96,7 +94,7 @@ export default function SellCarPage() {
           <MenuItem value="lahore">Lahore</MenuItem>
           <MenuItem value="islamabad">Islamabad</MenuItem>
           <MenuItem value="rawalpindi">Rawalpindi</MenuItem>
-          <MenuItem value="larachi">Karachi</MenuItem>
+          <MenuItem value="karachi">Karachi</MenuItem>
         </TextField>
         <input
           type="file"
